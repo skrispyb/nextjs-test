@@ -10,7 +10,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-
+    env:
+      NEXT_PUBLIC_BASE_PATH: /nextjs-test
+      
     strategy:
       matrix:
         node-version: [16.x]
