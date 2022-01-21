@@ -1,7 +1,7 @@
 module.exports = {
   images: {
     loader: 'imgix',
-    path: 'https://example.com/myaccount/',
+    path: 'https://github.com/skrispyb/',
   },
   reactStrictMode: true,
   basePath: process.env.NEXT_PUBLIC_BASE_PATH,
