@@ -66,8 +66,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">my Next.js test project!</a>
+        <h1 className={styles.title} style={{margin: "12px 0"}}>
+          Welcome to my Next.js test project!
         </h1>
         {status && status === 'success' && (
           <div className='bg-green-100 text-green-700 p-2 rounded border mb-2 border-green-700' style={{backgroundColor: "rgb(0,200,0)", padding: "1rem", margin:"24px 0", fontSize: "24px", fontWeight: "600"}}>
