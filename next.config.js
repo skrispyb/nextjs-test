@@ -6,5 +6,5 @@ module.exports = {
   reactStrictMode: true,
   basePath: process.env.NEXT_PUBLIC_BASE_PATH,
   assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
-  STRIPE_API_KEY: process.env.STRIPE_API_KEY
+  NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
 }
