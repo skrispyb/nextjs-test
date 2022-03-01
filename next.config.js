@@ -1,10 +1,9 @@
 module.exports = {
   images: {
-    domains: ['images.unsplash.com'],
-    // loader: 'imgix',
-    // path: 'https://skrispyb.github.io' || 'http://localhost:3000/',
+    loader: 'imgix',
+    path: 'https://skrispyb.github.io' || 'http://localhost:3000/',
   },
   reactStrictMode: true,
-  // basePath: process.env.NEXT_PUBLIC_BASE_PATH,
-  // assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH,
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH
 }

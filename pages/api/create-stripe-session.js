@@ -13,7 +13,6 @@ async function CreateStripeSession(req, res) {
     price_data: {
       currency: 'usd',
       product_data: {
-        images: [item.image],
         name: item.name,
       },
       unit_amount: item.price * 100,
@@ -28,9 +27,6 @@ async function CreateStripeSession(req, res) {
     mode: 'payment',
     success_url: redirectURL + '?status=success',
     cancel_url: redirectURL + '?status=cancel',
-    metadata: {
-      images: item.image,
-    },
   });
 
   res.json({ id: session.id });

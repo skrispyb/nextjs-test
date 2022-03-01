@@ -16,8 +16,6 @@ export default function Home() {
   const [item, setItem] = useState({
     name: 'Apple AirPods',
     description: 'Latest Apple AirPods.',
-    image:
-      'https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80',
     quantity: 0,
     price: 999,
   });
@@ -81,7 +79,6 @@ export default function Home() {
         )}
 
         <div className='shadow-lg border rounded p-2 '>
-          <Image src={item.image} width={300} height={150} alt={item.name} />
           <h2 className='text-2xl'>$ {item.price}</h2>
           <h3 className='text-xl'>{item.name}</h3>
           <p className='text-gray-500'>{item.description}</p>
