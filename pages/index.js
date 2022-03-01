@@ -16,8 +16,6 @@ export default function Home() {
   const [item, setItem] = useState({
     name: 'Apple AirPods',
     description: 'Latest Apple AirPods.',
-    image:
-      'https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80',
     quantity: 0,
     price: 999,
   });
@@ -66,8 +64,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">my Next.js test project!</a>
+        <h1 className={styles.title} style={{margin: "12px 0"}}>
+          Welcome to my Next.js test project!
         </h1>
         {status && status === 'success' && (
           <div className='bg-green-100 text-green-700 p-2 rounded border mb-2 border-green-700' style={{backgroundColor: "rgb(0,200,0)", padding: "1rem", margin:"24px 0", fontSize: "24px", fontWeight: "600"}}>
@@ -81,7 +79,6 @@ export default function Home() {
         )}
 
         <div className='shadow-lg border rounded p-2 '>
-          <Image src={item.image} width={300} height={150} alt={item.name} />
           <h2 className='text-2xl'>$ {item.price}</h2>
           <h3 className='text-xl'>{item.name}</h3>
           <p className='text-gray-500'>{item.description}</p>
