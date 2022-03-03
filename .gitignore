@@ -10,7 +10,14 @@
 
 # next.js
 /.next/
-/out/
+pages/*
+public/*
+styles/*
+next.config.js
+package.json
+package-lock.json
+prefix.js
+.eslintrc.json
 
 # production
 /build
