@@ -10,9 +10,9 @@
 
 # next.js
 /.next/
-/pages/*
-/public/*
-/styles/*
+/pages
+/public
+/styles
 next.config.js
 package.json
 package-lock.json
